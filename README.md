@@ -103,6 +103,74 @@ curl 'http://localhost:8000/api/search?q=rentals'
 
 ---
 
+## Practical use cases
+
+1. **Internal document search for operations & compliance**
+
+    You likely have manuals, SOPs, safety rules, customs forms and training docs.
+    - Build a semantic search over policies so any dispatcher/manager can ask plain English and get the right section back.
+    - This beats keyword search when terms vary (e.g., “hazardous goods rules vs dangerous goods regs”).
+
+    This saves time and cuts mistakes.
+
+2. **Driver support knowledge base**
+
+    Drivers ask the same questions over and over (routes, pay, equipment issues, hours of service).
+
+    - Index past tickets, Slack/Teams chats, driver handbook Q&As.
+    - Provide a search API for support staff or an internal bot.
+
+    Improves support speed and accuracy for drivers.
+
+3. **Customer service & freight status queries**
+
+    Your customer service people handle queries like:
+
+    - “Where’s my refrigerated load from Winnipeg?”
+    - “Any delays on the Ontario corridor?”
+
+    Build a semantic retriever across:
+
+    - Shipment updates
+    - GPS tracking notes
+    - Delay logs
+    - Then feed results into a simple response app or assistant.
+
+    Better than filtering by exact keywords.
+
+4. **Load-to-carrier matching / loadboard enhancement**
+
+    You already have a load board and partner network. Instead of keyword filters:
+
+    - Embed load descriptions and carrier profiles.
+    - When a broker enters a free-text request (“temperature controlled from Calgary to Chicago tomorrow”), return the best candidate carriers.
+
+    That makes matching smarter for contracts and spot loads.
+
+5. **Knowledge extraction from driver logs/claims**
+
+    There’s a ton of unstructured text in:
+    - Driver log notes
+    - Incident reports
+    - Claims descriptions
+
+    Vector search can help you:
+    - Find similar past incidents
+    - Identify patterns (e.g., recurring trailer issues)
+    - Speed claims investigation
+
+    This cuts investigation time.
+
+6. **Hiring & training support**
+
+    For HR and training teams:
+    - Index job descriptions, training materials, and onboarding docs.
+    - Provide a tool where a recruiter or new employee can ask for specifics (“What’s the finishing program detail?”) and get exact text snippets.
+
+    It’s faster than manual searches through PDFs and folders.
+
+---
+
 ## License
 
 MIT
